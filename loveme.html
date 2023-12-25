@@ -1,0 +1,101 @@
+<!-- loveme.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You Love Me?</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #cc3399; /* Dark Pink background color */
+            color: #ffffff; /* White text color */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: 2px solid #ffffff; /* White outline */
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: transparent; /* Transparent background */
+            color: #ffffff; /* White text color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Do you love me?</h1>
+
+    <!-- Button container for "Yes" and "No" buttons -->
+    <div class="button-container">
+        <button id="yes-btn" onclick="window.location.href='yespage.html'">Yes</button>
+        <button id="no-btn" onclick="toggleButtons()">No</button>
+    </div>
+
+    <script>
+        function toggleButtons() {
+            var yesButton = document.getElementById('yes-btn');
+            var noButton = document.getElementById('no-btn');
+
+            // Swap text and styles between "Yes" and "No" buttons
+            var tempText = yesButton.innerText;
+            yesButton.innerText = noButton.innerText;
+            noButton.innerText = tempText;
+
+            // Display an alert
+        }
+    </script>
+</body>
+</html>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 170vh;
+            margin: 0;
+        }
+
+        img {
+            max-width: 20%;
+            height: auto;
+            order-radius: 5px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- Display the GIF in the center -->
+    <img src="https://media1.tenor.com/m/LeS3f_AB_ckAAAAC/wondering-cat.gif" alt="Centered GIF">
+
+</body>
+</html>
